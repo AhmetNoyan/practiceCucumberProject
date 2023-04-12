@@ -46,7 +46,7 @@ public class UserManagementSteps {
 	    loginpage.password.sendKeys(DataReader.getProperty("password"));
 	}
 
-	@When("I click on login button")
+	@And("I click on login button")
 	public void i_click_on_login_button() {
 	    loginpage.button.click();
 	}
@@ -57,7 +57,7 @@ public class UserManagementSteps {
 	    throw new io.cucumber.java.PendingException();
 	}
 
-	@Then("I should not be logged in")
+	@And("I should not be logged in")
 	public void i_should_not_be_logged_in() {
 	    // Write code here that turns the phrase above into concrete actions
 	    throw new io.cucumber.java.PendingException();
